@@ -4,24 +4,17 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const mod = b.addModule("otter", .{
+    _ = b.addModule("ecs", .{
         .root_source_file = b.path("src/root.zig"),
         .target = target,
         .optimize = optimize,
     });
-
-    const ecs_dep = b.dependency("ecs", .{});
-    const ecs = ecs_dep.module("ecs");
-
-    mod.addImport("ecs", ecs);
 
     const unit_tests = b.addTest(.{
         .root_source_file = b.path("src/root.zig"),
         .target = target,
         .optimize = optimize,
     });
-
-    unit_tests.root_module.addImport("ecs", ecs);
 
     const run_unit_tests = b.addRunArtifact(unit_tests);
 
