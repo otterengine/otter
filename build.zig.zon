@@ -1,0 +1,14 @@
+.{
+    .name = "otter",
+    .version = "0.1.0-dev",
+
+    .dependencies = .{},
+
+    .paths = .{
+        "src",
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE-APACHE",
+        "LICENSE-MIT",
+    },
+}
