@@ -1,0 +1,176 @@
+/* ============================= */
+/* Configurable Color Palette    */
+/* ============================= */
+:root {
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-heading: #ffffff;
+  --color-link: #1e88e5;
+  --color-link-hover: #90caf9;
+  --color-border: #333333;
+  --color-muted: #888888;
+
+  --color-accent: #ff5722;
+  --color-accent-hover: #ff7043;
+
+  --font-body: "Arial", sans-serif;
+  --font-heading: "Georgia", serif;
+  --line-height: 1.6;
+}
+
+/* ============================= */
+/* Reset and Base Styles         */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  font-size: 16px;
+  padding: 1em;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* ============================= */
+/* Typography                    */
+/* ============================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  border-left: 4px solid var(--color-border);
+  padding-left: 1em;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+/* ============================= */
+/* Lists                         */
+/* ============================= */
+ul,
+ol {
+  margin: 1em 0 1em 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ============================= */
+/* Tables                        */
+/* ============================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th,
+td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-border);
+  color: var(--color-heading);
+}
+
+/* ============================= */
+/* Forms                         */
+/* ============================= */
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-body);
+  font-size: 1em;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* ============================= */
+/* Utility Classes               */
+/* ============================= */
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
