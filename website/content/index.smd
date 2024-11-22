@@ -1,0 +1,8 @@
+---
+.title = "Otter Engine",
+.date = @date("2024-11-22T00:00:00+00:00"),
+.author = "Otter Engine Contributors",
+.layout = "index.shtml",
+.draft = false,
+---
+This website is currently under construction!
