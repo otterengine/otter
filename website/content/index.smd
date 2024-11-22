@@ -6,3 +6,16 @@
 .draft = false,
 ---
 This website is currently under construction!
+
+#### Some Code
+```zig
+const std = @import("std");
+
+// A comment
+pub fn main() void {
+    const msg = "Hello, world!";
+    const great_num = 42;
+
+    std.debug.print("{s} {d}\n", .{ msg, great_num });
+}
+```
