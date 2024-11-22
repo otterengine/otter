@@ -1,0 +1,220 @@
+/* ========================================= */
+/* Configurable Code Highlighting Palette    */
+/* ========================================= */
+:root {
+  /* General */
+  --code-bg: #1e1e2e;
+  --code-border: #3c3c4a;
+  --code-default: #dcdcdc;
+
+  /* Syntax Colors */
+  --code-keyword: #c586c0;
+  --code-function: #61afef;
+  --code-function-builtin: #e5c07b;
+  --code-variable: #d19a66;
+  --code-field: #98c379;
+  --code-variable-builtin: #e06c75;
+  --code-type: #e5c07b;
+  --code-type-qualifier: #c586c0;
+  --code-operator: #56b6c2;
+  --code-string: #98c379;
+  --code-string-escape: #e5c07b;
+  --code-string-special: #61afef;
+  --code-number: #d3869b;
+  --code-float: #d3869b;
+  --code-comment: #5c6370;
+  --code-attribute: #e06c75;
+  --code-boolean: #e06c75;
+  --code-constant: #61afef;
+  --code-constant-builtin: #61afef;
+  --code-label: #c8a6ff;
+  --code-include: #61afef;
+  --code-punctuation: #abb2bf;
+  --code-exception: #e06c75;
+  --code-error: #be5046;
+}
+
+/* ============================= */
+/* Code Blocks and Inline Code   */
+/* ============================= */
+code {
+  background-color: var(--code-bg);
+  color: var(--code-default);
+  border-radius: 4px;
+}
+
+pre {
+  background-color: var(--code-bg);
+  color: var(--code-default);
+  padding: 1em;
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+
+/* ============================= */
+/* Syntax Highlighting           */
+/* ============================= */
+
+/* Comments */
+pre code .comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+/* Variables */
+pre code .variable {
+  color: var(--code-variable);
+}
+
+pre code .variable.builtin {
+  color: var(--code-variable-builtin);
+}
+
+/* Fields */
+pre code .field {
+  color: var(--code-field);
+}
+
+/* Parameters */
+pre code .parameter {
+  color: var(--code-variable);
+}
+
+/* Functions */
+pre code .function {
+  color: var(--code-function);
+}
+
+pre code .function.builtin {
+  color: var(--code-function-builtin);
+}
+
+/* Types */
+pre code .type {
+  color: var(--code-type);
+}
+
+pre code .type.builtin {
+  color: var(--code-type);
+}
+
+pre code .type.qualifier {
+  color: var(--code-type-qualifier);
+}
+
+/* Constants */
+pre code .constant {
+  color: var(--code-constant);
+}
+
+pre code .constant.builtin {
+  color: var(--code-constant-builtin);
+}
+
+/* Strings */
+pre code .string {
+  color: var(--code-string);
+}
+
+pre code .string.escape {
+  color: var(--code-string-escape);
+}
+
+pre code .string.special {
+  color: var(--code-string-special);
+}
+
+/* Numbers */
+pre code .number {
+  color: var(--code-number);
+}
+
+pre code .float {
+  color: var(--code-float);
+}
+
+/* Booleans */
+pre code .boolean {
+  color: var(--code-boolean);
+}
+
+/* Labels */
+pre code .label {
+  color: var(--code-label);
+}
+
+/* Includes */
+pre code .include {
+  color: var(--code-include);
+}
+
+/* Operators */
+pre code .operator {
+  color: var(--code-operator);
+}
+
+/* Punctuation */
+pre code .punctuation {
+  color: var(--code-punctuation);
+}
+
+pre code .punctuation.bracket {
+  color: var(--code-punctuation);
+}
+
+pre code .punctuation.delimiter {
+  color: var(--code-punctuation);
+}
+
+pre code .punctuation.special {
+  color: var(--code-punctuation);
+}
+
+/* Attributes */
+pre code .attribute {
+  color: var(--code-attribute);
+}
+
+/* Exceptions */
+pre code .exception {
+  color: var(--code-exception);
+  font-weight: bold;
+}
+
+/* Errors */
+pre code .error {
+  color: var(--code-error);
+  font-weight: bold;
+}
+
+/* Keywords */
+pre code .keyword {
+  color: var(--code-keyword);
+}
+
+pre code .keyword.function {
+  color: var(--code-attribute);
+}
+
+pre code .keyword.operator {
+  color: var(--code-operator);
+}
+
+pre code .keyword.return {
+  color: var(--code-keyword);
+}
+
+pre code .keyword.coroutine {
+  color: var(--code-keyword);
+}
+
+pre code .conditional {
+  color: var(--code-keyword);
+}
+
+pre code .repeat {
+  color: var(--code-keyword);
+}

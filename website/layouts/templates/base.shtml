@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="$site.asset('style.css').link()">
+    <link rel="stylesheet" type="text/css" href="$site.asset('highlights.css').link()">
     <title id="title"><super></title>
   </head>
   <body id="main">
