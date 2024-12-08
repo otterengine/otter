@@ -4,6 +4,9 @@
 
 ### Why Conventional Commits?
 
+We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) as
+our commit message format.
+
 Conventional commits help us:
 - Automatically generate changelogs
 - Manage semantic versioning
@@ -18,6 +21,10 @@ Conventional commits help us:
 - `refactor`: Code restructuring
 - `test`: Adding/modifying tests
 - `chore`: Maintenance tasks
+- `perf`: Performance improvements
+- `ci`: CI configuration changes
+- `build`: Build system changes
+- `revert`: Reverts a previous commit
 
 ### Message Format
 
@@ -57,7 +64,7 @@ BREAKING CHANGE: Requires update to scene initialization
 
 1. Follow coding standards
 2. Update documentation
-3. PRs will typically be squash merged
+3. PRs will only be merged if they pass CI, are approved by a maintainer, and use conventional commit messages.
 
 ## Recommended Tools
 
