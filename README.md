@@ -6,6 +6,13 @@ Nothing is implemented yet, we are just brainstorming ideas to implement in the 
 
 ## Plan
 
+- [ ] Implement an ECS architecture.
+
+### Ideas
+
+These are purely ideas for the engine, that serve as food for thought.
+They are in no way guaranteed to be implemented.
+
 - [ ] Implement [RECS](RECS.md), a new take on ECS.
 
 ## Contributing
