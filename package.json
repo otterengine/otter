@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "devmoji": "^2.3.0",
+    "husky": "^9.1.7",
+    "semantic-release": "^24.2.0"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
