@@ -7,10 +7,13 @@
 .{
     .name = "otter",
     .version = "0.0.0",
-    .dependencies = .{},
+    .dependencies = .{
+        .ecs = .{ .path = "modules/ecs" },
+    },
 
     .paths = .{
         "src",
+        "modules",
         "build.zig",
         "build.zig.zon",
         "LICENSE",
