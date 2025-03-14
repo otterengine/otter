@@ -1,0 +1,3 @@
+[submodule "otter_slice"]
+	path = modules/otter_slice
+	url = ../otter_slice.git
